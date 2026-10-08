@@ -1,0 +1,18 @@
+# Secretos: nunca subir credenciales
+.env
+.env.*
+!.env.example
+
+# Dependencias y artefactos
+node_modules/
+coverage/
+*.log
+npm-debug.log*
+
+# Estado local del bot (casos, usuarios, encuestas)
+data/*
+!data/.gitkeep
+logs/*
+!logs/.gitkeep
+*.corrupto-*
+*.tmp

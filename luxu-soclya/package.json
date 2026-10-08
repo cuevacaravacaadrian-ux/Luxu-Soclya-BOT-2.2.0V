@@ -1,0 +1,40 @@
+{
+  "name": "luxu-soclya",
+  "version": "2.2.0",
+  "description": "Luxu: bot de moderación, seguridad y comunidad para Soclya (memoria de chat, palabrotas, escalera de sanciones y vigilancia del servidor)",
+  "license": "MIT",
+  "private": true,
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test",
+    "check": "node -e \"['config','bot','core/store','core/gateway','security/moderator','community/commands','watch/watcher'].forEach(m=>require('./src/'+m))\""
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "pino": "^9.6.0",
+    "ws": "^8.18.0"
+  },
+  "keywords": [
+    "soclya",
+    "bot",
+    "moderation",
+    "security",
+    "discord-like",
+    "chatbot",
+    "spanish",
+    "community"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TU_USUARIO/luxu-soclya.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TU_USUARIO/luxu-soclya/issues"
+  },
+  "homepage": "https://github.com/TU_USUARIO/luxu-soclya#readme"
+}
